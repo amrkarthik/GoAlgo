@@ -9,9 +9,7 @@ func SortArr(inputArr []int) []int {
 				minNumIndex = i
 			}
 		}
-		temp:=inputArr[minNumIndex]
-		inputArr[minNumIndex]=inputArr[startIndex]
-		inputArr[startIndex]=temp
+		inputArr[minNumIndex], inputArr[startIndex] = inputArr[startIndex], inputArr[minNumIndex]
 		startIndex+=1
 	}
 	return inputArr
