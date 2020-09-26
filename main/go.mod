@@ -8,8 +8,11 @@ replace local/selectionsort => ../selectionsort
 
 replace local/insertionsort => ../insertionsort
 
+replace local/mergesort => ../mergesort
+
 require (
 	local/bubblesort v0.0.0-00010101000000-000000000000
 	local/insertionsort v0.0.0-00010101000000-000000000000
+	local/mergesort v0.0.0-00010101000000-000000000000
 	local/selectionsort v0.0.0-00010101000000-000000000000
 )
